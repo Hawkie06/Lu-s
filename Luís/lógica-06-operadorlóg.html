@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<body>
+    <h1>Notas e Faltas</h1>
+    <script>
+        //pedir nota1
+        nota1 = parseFloat(prompt("Digite a nota do 1 semestre"));
+        //pedir as faltas do 1 semestre 
+        faltas1 = parseFloat(prompt("Digite o número de faltas do 1 semestre"));
+        //pedir nota2
+        nota2 = parseFloat(prompt("Digite a nota do 2 semestre"));
+        //pedir as faltas do 2 semestre 
+        faltas2 = parseFloat(prompt("Digite o número de faltas do 2 semestre"));
+         //calcular a média e a soma das faltas
+         mediaNotas = (nota1+nota2)/2;
+         somaFaltas = faltas1+faltas2;
+        if(mediaNotas >=60 && somaFaltas <= 20){
+            alert("Parabéns, você foi aprovado. Sua média foi " + mediaNotas +
+            " e seu número de faltas foi "+somaFaltas);
+        }else{
+            if(mediaNotas < 60 && somaFaltas <= 20){
+            alert("Você tem que estudar mais. Sua média foi "+mediaNotas+", porém, seu número de faltas foi "+somaFaltas+". Você direito a fazer uma recuperação.");
+        }else{
+            alert("Você tem que estudar mais, você foi reprovado. Sua média foi "+mediaNotas+" e seu número de faltas foi "+somaFaltas);
+        }
+        }
+        
+
+    </script>
+</body>
+</html>

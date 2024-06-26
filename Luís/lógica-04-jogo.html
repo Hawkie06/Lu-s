@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+</head>
+
+<body>
+    <script>
+
+        var jog1, jog2, nSorteado;
+        jog1 = parseInt(prompt("Primeiro jogador, digite um número"));
+        jog2 = parseInt(prompt("Segundo jogador, digite um número"));
+        //se forem iguais, mostrar mensagem empate
+        if (jog1 === jog2) {
+            alert("Deu empate! O jogador 1 digitou " + jog1 + " e o jogador 2 digitou " + jog2 + ".");
+        }
+        else {
+            //sortear um número entre 0 e 1
+            nSorteado = parseInt(Math.random() * 2);
+            console.log(nSorteado);
+            //se o número sorteado for 0, ganha quem escolher o MENOR número
+            if (nSorteado === 0) {
+                if (jog1 < jog2) {
+                    alert("Jogador 1 venceu!");
+                }
+                else {
+                    alert("Jogador  2 venceu!");
+                }
+            } else {
+                if (jog1 > jog2)
+                    alert("Jogador 1 venceu!");
+                else {
+                    alert("Jogador  venceu!");
+                }
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>

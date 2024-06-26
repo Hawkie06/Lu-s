@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de comparação</title>
+</head>
+<body>
+    <h1>Operadores de comparação</h1>
+
+    <!--Mundo script-->
+    <script>
+        //declarar as variáveis 
+        var nota1, nota2, media;
+        //pedir nota 1
+         nota1= parseFloat(prompt("Digite a primeira nota"));
+        //pedir nota 2
+        nota2= parseFloat(prompt("Digite a segunda nota"));
+        
+        //calcular média
+        media=(nota1+nota2)/2;
+
+        //estrutura if (se)
+       if(media >=60){
+        alert("Parabéns, você foi aprovado com média: " + media);
+       }
+        else{ alert ("Não foi desta vez! Você ficou retido com média: "+media); 
+       }
+    </script>
+</body>
+</html>

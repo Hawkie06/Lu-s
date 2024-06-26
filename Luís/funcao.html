@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar tabuadas</title>
+</head>
+<body>
+    <h1>Usando funções para gerar uma tabuada</h1>
+    <!--Vamos criar botões para chamar as funções-->
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+     <div id ="saida"></div><!--é onde vamos "printar" nosso resultado -->
+     <script>
+        function gerarTabuada(){
+            var numero = prompt("Digite um número para a tabuada")
+            numero = parseInt(numero);
+
+            var saida=document.querySelector("#saida");
+
+            var mensagem="";
+        
+            for(i=1;i<=100;i++){
+
+                mensagem += numero + "X" + i + " = "+ (numero*i) + "<br>";
+
+            }
+            saida.innerHTML=mensagem;
+        }
+        function limparTabuada(){
+
+            var saida = document.querySelector("#saida");
+            var mensagem="";
+        saida.innerHTML=mensagem;
+
+        }
+     </script>
+
+</body>
+</html>

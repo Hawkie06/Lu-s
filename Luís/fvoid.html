@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Usando Void - retorna um valor</title>
+</head>
+<body>
+    <!--Vamos criar nossos botões-->
+    <button onClick="limparTabuada()">Limpar a tabuada</button>
+    <button onClick="gerarTabuada()">Gerar a tabuada</button>
+    <!--Vamos criar nossa saída-->
+    <div id="saida"></div>
+
+    <!--Código Script onde criaremos nossas funções-->
+    <script>
+        function gerarTabuada(){
+            //pedir um número para a tabuada 
+            let n = prompt("Digite um número para tabuada");
+
+            //transformar em number
+            n = parseFloat(n);
+
+            let i = 1;
+            let mensagem = "";
+
+            //repetir os números 
+            while(i <= 100){
+                mensagem += n + "X" + i + "=" + (n*i) + "<br>";
+                i++; 
+            }
+            saida.innerHTML=mensagem;
+        }
+        //criar função para limpar a tabuada
+        function limparTabuada(){
+            mensagem="";
+            saida.innerHTML=mensagem;
+        }
+        
+
+    </script>
+
+</body>
+</html>

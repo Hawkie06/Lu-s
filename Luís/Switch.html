@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Switch</title>
+</head>
+<body>
+    <h1>Usando Switch</h1>
+    <h2>O Switch é uma estrutura de controle utilazadas para avaliar uma expressão 
+        e executar diferentes blocos do código.</h2>
+        <h2>O switch é usado quando temos alternativas limitadas, diferentes do if-else aninhados quando  há muitas condições a serem avaliadas.</h2>
+      
+        <script>
+            //pedir para usuário digitar um número de 1 a 3. Cada número vai trazer um alert com uma frase 
+            //pedir um número
+            var n = parseInt(prompt("Digite um número "));
+
+            //mostrar na tela uma mensagem
+            //usaremos switch
+            switch(n){
+                case 1:
+                alert("A prática é a mãe da habilidade!");
+                break;
+                
+                case 2:
+                alert("Se o problema não tem solução, resolvido está!");
+                break;
+                
+                case 3:
+                alert("Com grandes poderes, vem grandes responsabilidades- Tio Ben");
+                break;
+                
+                default:
+                    alert("Nenhuma opção válida. Digite um número de 1 a 3");
+                break;    
+
+            }
+        </script>
+</body>
+</html>

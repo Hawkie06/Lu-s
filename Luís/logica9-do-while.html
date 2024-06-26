@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Loops</title>
+</head>
+<body>
+    <p>O computador é ótimo para operações repetitivas, e para fazer operações repetitivas, e para que ele faça isso por nós, temos  os laços de repetitivas, e para que ele faça isso por nós, temos os laços de repetição, como por exemplo, o while, o Do-while e o famoso FOR.</p>
+    <p>Vamos a prática</p>
+    <script>
+        var numero = prompt("Digite um número para a tabuada")
+        numero = parseInt (numero);
+        //no loop do while, na primeira passada ele executa o programa e depois ele testa a condição (enquanto)
+        //no lugsr de indice pode ser contador 
+        var indice = 1;
+        // do / while = faça/enquanto 
+         do{
+            document.write(numero + "X" + indice + " = "+ numero*indice + "<br>");
+            indice = indice + 1;
+        }while(indice<=10)
+
+        document.write("Saiu do loop");
+
+    </script>
+</body>
+</html>                                                                          

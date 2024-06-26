@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um programa que pede 5 números</title>
+</head>
+<body>
+    <script>
+       var n = parseInt(prompt("Digite quantos números você quer digitar."));
+       var som=0;
+        for(i=0; i<=n; i++) {
+            var rec = parseInt(prompt("Digite um número"));
+            document.write("O número digitado foi " + rec + "<br>");
+            
+            som=som+rec;
+
+        }
+    
+        document.write("A soma dos valores é "+som+".");
+        
+    
+    </script>
+</body>
+</html>
